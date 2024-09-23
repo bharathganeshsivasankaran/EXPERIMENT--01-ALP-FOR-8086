@@ -3,7 +3,7 @@
 ```
 Name : Bharathganesh.S
 Roll no : 212222230022
-Date of experiment :
+Date of experiment : 12-08-2024
 ```
 
 ## Aim: 
@@ -71,69 +71,47 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 ![image](https://user-images.githubusercontent.com/36288975/189273277-113a2a33-4a40-4ff8-95a5-ecd3a1f504fe.png)
 
 
-
-
-
-
-
 ## Programs for arithmetic  operations
 
-## Addition  of 8 bit ALP 
-
-```
-
-org 100h
-mov ax,1234h;
-mov bx,0112h;
-add ax,bx;
-mov [1234h],ax;
-ret
+## Addition  of 8 bit numbers ALP 
+```assembly
+MOV AL,88H
+MOV BL,65H
+ADD AL,BL
+HLT
 ```
 ## Output  
+ ![ADDEX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/9b3a7e31-db56-4c0e-9b59-43fe21ab0371)
 
-![359748337-e6425dfe-500f-4c17-a53e-03126ec9dd61](https://github.com/user-attachments/assets/0566cd2c-9fe0-401a-941c-84e8dfbcf3ff)
+## Subtraction  of 8 bit numbers  ALP 
+```assembly
+MOV AL,84H
+MOV BL,63H
+SUB AL,BL
+HLT
+``` 
+## Output 
+![SUBEX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/fcb56b58-d90f-4cf2-850d-85c531d9862c)
 
-## Subtraction   of 8 bit numbers  ALP 
-
+## Multiplication of 8 bit numbers  ALP
+```assembly
+MOV AL,75H
+MOV BL,32H
+MUL BL
+HLT
 ```
-org 100h
-mov ax,1101h;
-mov bx,4789h;
-sub ax,bx;
-mov [4678h],ax;
-ret
-```
-
 ## Output  
-![359749317-ea5be6b1-16b8-4ec8-ac30-253f13f8273b](https://github.com/user-attachments/assets/b451fe75-ad1d-4a00-85dd-662714ef1f86)
+![MULEX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/d5f842ca-8113-4380-9948-2dd4089cb605)
 
-## Multiplication alp 
+## Division of 8 bit numbers  ALP
+```assembly
+MOV AL,68H
+MOV BL,18H
+DIV BL
+HLT
 ```
-
-org 100h
-mov ax,3102h;
-mov bx,2318h;
-mul ax;
-mov [4004h],ax;
-ret
-```
- ## Output  
- 
-![359750006-a657c03f-0982-4f2c-8d8b-6f13f31095b8](https://github.com/user-attachments/assets/a3a46ab3-34a5-476e-8a3b-6b9192be00bc)
-
-## Division alp 
-
-```
-org 100h
-MOV al,26h;
-MOV bl,[2369h];
-DIV bl;
-MOV [2399h],al;
-ret
-```
-
 ## Output  
-![359751088-ce386bb4-179a-498d-9754-d0fd78187284](https://github.com/user-attachments/assets/acea11a3-9aad-4029-9267-50caf859d255)
+![DIV EX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/b34c43fd-318d-4df8-995b-d4357456f886)
 
 ## And of 8 bit numbers ALP
 ```assembly
@@ -171,6 +149,14 @@ MOV BL,77H
 XOR AL,BL
 HLT
 ```
+
+## Output
+![XOREX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/838fcf0e-3db2-4d6c-a9b6-0607b839726d)
+
+
+
+
+
 
 ## Output
 ![XOREX](https://github.com/JananiSoundararajan/EXPERIMENT--01-ALP-FOR-8086/assets/119477549/838fcf0e-3db2-4d6c-a9b6-0607b839726d)
